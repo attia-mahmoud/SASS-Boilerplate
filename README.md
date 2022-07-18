@@ -10,8 +10,8 @@ Boilerplate for new SASS Projects
 
 ## Packages
 
-sass: v1.53.0
-parcel-bundler: v1.12.5
+- sass: v1.53.0
+- parcel-bundler: v1.12.5
 
 ## Credit
 
