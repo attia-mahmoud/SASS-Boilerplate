@@ -4,9 +4,9 @@ Boilerplate for new SASS Projects
 
 ## How to run
 
-    git clone https://github.com/attia-mahmoud/SASS-Boilerplate
+        git clone https://github.com/attia-mahmoud/SASS-Boilerplate
 
-    npm start
+        npm start
 
 ## Packages
 
