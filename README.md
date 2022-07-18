@@ -6,6 +6,8 @@ Boilerplate for new SASS Projects
 
     git clone https://github.com/attia-mahmoud/SASS-Boilerplate
 
+    npm install
+
     npm start
 
 ## Packages
