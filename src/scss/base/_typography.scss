@@ -1,0 +1,55 @@
+@use "../abstracts/type-scale" as *;
+
+/* --------------------- */
+/* Typography */
+/* --------------------- */
+
+@each $screen-size, $font-size in $type-scale {
+  @if $screen-size == small {
+    @each $size, $value in $font-size {
+      .fs-#{$size} {
+        font-size: var(--fs-#{$size});
+      }
+    }
+  }
+}
+
+$letter-spacing: (
+  1: 3,
+  2: 2.5,
+  3: 2,
+  4: 1.5,
+  5: 1,
+);
+
+@each $size, $value in $letter-spacing {
+  .letter-spacing-#{$size} {
+    letter-spacing: #{$value}px;
+  }
+}
+
+$line-height: (
+  1: 3,
+  2: 2.5,
+  3: 2,
+  4: 1.5,
+  5: 1,
+);
+
+@each $size, $value in $line-height {
+  .line-height-#{$size} {
+    line-height: #{$value}px;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+$font-weight: (500, 600, 700, 800, 900);
+
+@each $weight in $font-weight {
+  .fw-#{$weight} {
+    font-weight: #{$weight};
+  }
+}

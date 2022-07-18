@@ -1,0 +1,27 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/type-scale" as *;
+@use "../abstracts/breakpoints" as *;
+/* --------------------- */
+/* Root */
+/* --------------------- */
+:root {
+  @each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      --clr-#{$color}-#{$shade}: #{$value};
+    }
+  }
+
+  @each $screen-size, $font-size in $type-scale {
+    @if $screen-size == small {
+      @each $size, $value in $font-size {
+        --fs-#{$size}: #{$value};
+      }
+    } @else {
+      @include mq(large) {
+        @each $size, $value in $font-size {
+          --fs-#{$size}: #{$value};
+        }
+      }
+    }
+  }
+}
