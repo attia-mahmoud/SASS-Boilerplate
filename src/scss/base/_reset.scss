@@ -80,10 +80,10 @@ select {
 }
 
 body {
-    line-height: 1.5;
-    text-rendering: optimizeSpeed;
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: min-content 1fr;
-    overflow-x: hidden;
-  }
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  overflow-x: hidden;
+}

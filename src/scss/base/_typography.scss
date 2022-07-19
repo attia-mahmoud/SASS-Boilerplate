@@ -53,3 +53,9 @@ $font-weight: (500, 600, 700, 800, 900);
     font-weight: #{$weight};
   }
 }
+
+@each $font-faces, $font-families in $fonts {
+  .ff-#{$font-faces} {
+    font-family: $font-families, sans-serif;
+  }
+}
