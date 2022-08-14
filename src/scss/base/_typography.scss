@@ -39,7 +39,7 @@ $line-height: (
 
 @each $size, $value in $line-height {
   .line-height-#{$size} {
-    line-height: #{$value}px;
+    line-height: #{$value};
   }
 }
 
